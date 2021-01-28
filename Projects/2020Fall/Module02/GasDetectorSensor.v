@@ -6,11 +6,15 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831068
+--  Student Name: Farshid Nooshi
+--  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
---  Additional Comments:
+--  Student ID  : 9831066
+--  Student Name: Mohammad MAhdi Nemati Haravani
+--  Student Mail: adel110@aut.at.ir
+--  *******************************************************
+--  Additional Comments: lab number 8 Group 6
 --
 --*/
 
@@ -28,6 +32,9 @@ module GasDetectorSensor (
 );
 
 	/* write your code here */
+	find_1011101010 CH4(arst, clk, din, dout[0]);
+	find_101010010011 CO(arst, clk, din, dout[1]);
+	find_100100100 CO2(arst, clk, din, dout[2]);
 	
 	/* write your code here */
 
