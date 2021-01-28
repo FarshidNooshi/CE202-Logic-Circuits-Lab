@@ -6,11 +6,15 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831068
+--  Student Name: Farshid Nooshi
+--  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
---  Additional Comments:
+--  Student ID  : 9831066
+--  Student Name: Mohammad MAhdi Nemati Haravani
+--  Student Mail: adel110@aut.at.ir
+--  *******************************************************
+--  Additional Comments: lab number 8 Group 6
 --
 --*/
 
@@ -35,7 +39,8 @@ module CoolHeatSystem (
 );
 
 	/* write your code here */
-	
-	/* write your code here */
+	FanSpeed FS_0(arst, clk, speed, pwm_data);
+	ModePower MP_0(chs_conf, chs_power, chs_mode);
+	/* write your code here  */
 
 endmodule
