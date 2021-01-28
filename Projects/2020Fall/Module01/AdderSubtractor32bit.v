@@ -6,11 +6,15 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831068
+--  Student Name: Farshid Nooshi
+--  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
---  Additional Comments:
+--  Student ID  : 9831066
+--  Student Name: Mohammad MAhdi Nemati Haravani
+--  Student Mail: adel110@aut.at.ir
+--  *******************************************************
+--  Additional Comments: lab number 8 Group 6
 --
 --*/
 
@@ -28,6 +32,17 @@ module AdderSubtractor32x32 (
 );
 	// if sel = 0 then add else subtract
 	/* write your code here */
+	
+	wire [31:0] co;
+	genvar i;
+	
+	Full_Adder FA_0(A[0], B[0] ^ sel, sel, S[0], co[0]);
+	
+	for(i = 1 ; i < 32 ; i = i + 1) begin : loop_0
+		Full_Adder FA_i(A[i], B[i] ^ sel, co[i - 1], S[i], co[i]);
+	end
+	
+				  
 	
 	/* write your code here */
 
