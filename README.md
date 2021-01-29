@@ -10,13 +10,14 @@ AUT Logic Circuits Laboratory Material and Template Sources
 
 ## Assignments Quick Link
 
-* [**:pencil2: Lab-04**](https://github.com/aut-ce/CE202-LC-Lab-Manual/tree/main/assignment-04)
-* [**:pencil2: Lab-05**](https://github.com/aut-ce/CE202-LC-Lab-Manual/tree/main/assignment-05)
-* [**:pencil2: Lab-06**](https://github.com/aut-ce/CE202-LC-Lab-Manual/tree/main/assignment-06)
-* [**:pencil2: Lab-07**](https://github.com/aut-ce/CE202-LC-Lab-Manual/tree/main/assignment-07)
-* [**:pencil2: Lab-08**](https://github.com/aut-ce/CE202-LC-Lab-Manual/tree/main/assignment-08)
-* [**:pencil2: Lab-09**](https://github.com/aut-ce/CE202-LC-Lab-Manual/tree/main/assignment-09)
-* [**:pencil2: Lab-10**](https://github.com/aut-ce/CE202-LC-Lab-Manual/tree/main/assignment-10)
+* [**:pencil2: Lab-04**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-04)
+* [**:pencil2: Lab-05**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-05)
+* [**:pencil2: Lab-06**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-06)
+* [**:pencil2: Lab-07**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-07)
+* [**:pencil2: Lab-08**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-08)
+* [**:pencil2: Lab-09**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-09)
+* [**:pencil2: Lab-10**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-10)
+* [**:pencil2: Final Project**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/Projects/2020Fall)
 
 ## Videos Link
 
