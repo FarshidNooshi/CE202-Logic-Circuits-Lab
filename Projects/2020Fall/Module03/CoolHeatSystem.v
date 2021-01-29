@@ -11,7 +11,7 @@
 --  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
 --  Student ID  : 9831066
---  Student Name: Mohammad MAhdi Nemati Haravani
+--  Student Name: Mohammad Mahdi Nemati Haravani
 --  Student Mail: adel110@aut.at.ir
 --  *******************************************************
 --  Additional Comments: lab number 8 Group 6
@@ -34,7 +34,6 @@ module CoolHeatSystem (
 	
 	output [3:0] chs_power , // power  [cooler/heater] 
 	output       chs_mode  , // model  [heat=1/cool=0]
-
 	output       pwm_data    // data  [output]
 );
 

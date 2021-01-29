@@ -11,7 +11,7 @@
 --  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
 --  Student ID  : 9831066
---  Student Name: Mohammad MAhdi Nemati Haravani
+--  Student Name: Mohammad Mahdi Nemati Haravani
 --  Student Mail: adel110@aut.at.ir
 --  *******************************************************
 --  Additional Comments: lab number 8 Group 6
@@ -27,40 +27,32 @@
 module FanSpeed (
 	input        arst     , // reset [asynch]  
 	input        clk      , // clock [posedge] 
-	input [7:0] speed    , // speed [duty-cycle]  
+	input [7:0] speed    , // speed [duty-cycle]
 	output       pwm_data   // data  [output]
 );
 
 	/* write your code here */
 	reg pwm_data;
-	wire [7:0] out, out_Bar, multi_in;
-	wire [7:0] count;
-	reg rst;
+	wire [7:0] out, out_Bar, count;
 	genvar i;
-		
 	
-	Conter_8_Bit c_0(arst | rst, clk, count);
-	 
-	always @* begin 
-
-		if(speed != out) rst = 1'b1;
-		else rst = 1'b0;
+	for (i = 0 ; i < 8 ; i = i + 1) begin : loop_0
+	
+		Dlatch DL_0(1'b0, clk, speed[i], out[i], out_Bar[i]);
 	
 	end
 	
-	always@(speed) begin
-		rst = 1;
-	end
+	Counter_8_Bit c_0(arst | (clk && speed != out), clk, count);
 	
-	always @(count or posedge clk) begin 
-		
-		if(count == 8'b00000000)
-			rst = 0;
 	
-		if (count > speed)
+	always @(count) begin 
+	
+		if (count >= speed)
 			pwm_data = 0;
 		else 
 			pwm_data = 1;
+			
+			
 	end
 		
 	
