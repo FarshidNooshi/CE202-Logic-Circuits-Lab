@@ -11,7 +11,7 @@
 --  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
 --  Student ID  : 9831066
---  Student Name: Mohammad MAhdi Nemati Haravani
+--  Student Name: Mohammad Mahdi Nemati Haravani
 --  Student Mail: adel110@aut.at.ir
 --  *******************************************************
 --  Additional Comments: lab number 8 Group 6
