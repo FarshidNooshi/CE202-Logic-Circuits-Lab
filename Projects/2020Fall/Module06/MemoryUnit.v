@@ -6,11 +6,15 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831068
+--  Student Name: Farshid Nooshi
+--  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
---  Additional Comments:
+--  Student ID  : 9831066
+--  Student Name: Mohammad Mahdi Nemati Haravani
+--  Student Mail: adel110@aut.at.ir
+--  *******************************************************
+--  Additional Comments: lab number 8 Group 6
 --
 --*/
 
@@ -29,6 +33,14 @@ module MemoryUnit (
 );
     
 	/* write your code here */
+	
+	genvar i;
+	
+	for(i = 0 ; i < 35 ; i = i + 1) begin : loop_0
+	
+	Dflop DF_i(arst, clk, wren, din[i], dout[i]);
+	
+	end
 	
 	/* write your code here */
 
