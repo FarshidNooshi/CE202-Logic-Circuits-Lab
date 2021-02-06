@@ -6,11 +6,15 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831068
+--  Student Name: Farshid Nooshi
+--  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
---  Additional Comments:
+--  Student ID  : 9831066
+--  Student Name: Mohammad Mahdi Nemati Haravani
+--  Student Mail: adel110@aut.at.ir
+--  *******************************************************
+--  Additional Comments: lab number 8 Group 6
 --
 --*/
 
@@ -30,7 +34,9 @@ module LightingSystem (
 );
 
 	/* write your code here */
-	
+	ActiveLamps AL_0(tcode, ulight, lenght, lightnum);
+	WindowShadeDegree WSD_0(tcode, ulight, wshade);
+	LampState LS_0(lightnum, lightstate);
 	/* write your code here */
 
 endmodule
