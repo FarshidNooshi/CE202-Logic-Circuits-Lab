@@ -6,11 +6,15 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831068
+--  Student Name: Farshid Nooshi
+--  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
---  Additional Comments:
+--  Student ID  : 9831066
+--  Student Name: Mohammad Mahdi Nemati Haravani
+--  Student Mail: adel110@aut.at.ir
+--  *******************************************************
+--  Additional Comments: lab number 8 Group 6
 --
 --*/
 
@@ -49,6 +53,41 @@ module ControlUnit (
 	);
 
 	/* write your code here */
+	
+	wire [1:0] equal;
+	reg [34:0] configout;
+	reg write_en;
+	
+	PassCheckUnit PCU(password, syskey, equal[0]);
+	
+	// rst, set, enable, din, dout
+	Dlatch DF_Compare(arst | ~request, 1'b0, dbg_state == 3'b010 & confirm & request, equal[0], equal[1]);
+	
+	// rst, set, clk, din, dout
+	DFlop DF_X(arst | ~request, 1'b0, clk,
+					dbg_state[2] & ~dbg_state[1] & request 
+					| ~dbg_state[2] & dbg_state[1] & request & confirm 
+					& (~equal[1] | dbg_state[0] & equal[1])
+					, dbg_state[2]),
+			DF_Y(arst | ~request, ~arst & request & ~(dbg_state[2] | dbg_state[1]), clk,
+					~confirm & (~dbg_state[2] & dbg_state[1] & request | ~dbg_state[2] & dbg_state[0] & request) 
+					| ~dbg_state[2] & request & confirm 
+					& (dbg_state[0] & ~dbg_state[1] | equal[1] & dbg_state[1] & ~dbg_state[0])
+					, dbg_state[1]),
+			DF_Z(arst | (request & ~(dbg_state[2] | dbg_state[1])), ~arst & ~request, clk,
+					~request | dbg_state[2] & (dbg_state[1] | dbg_state[0]) 
+					| confirm & ~dbg_state[2] & ~dbg_state[0] | ~confirm 
+					& (dbg_state[1] & dbg_state[0] | ~dbg_state[2] & ~dbg_state[1] & ~dbg_state[0])
+					, dbg_state[0]);
+					
+			
+	always @(dbg_state) begin
+		if(dbg_state == 3'b100) begin
+			configout = configin;
+			write_en = 1'b1;
+		end
+		else write_en = 1'b0;
+	end
 	
 	/* write your code here */
 
