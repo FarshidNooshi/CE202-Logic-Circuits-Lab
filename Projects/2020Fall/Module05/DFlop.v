@@ -6,11 +6,15 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9831068
+--  Student Name: Farshid Nooshi
+--  Student Mail: farshidnooshi726@aut.at.ir
 --  *******************************************************
---  Additional Comments:
+--  Student ID  : 9831066
+--  Student Name: Mohammad Mahdi Nemati Haravani
+--  Student Mail: adel110@aut.at.ir
+--  *******************************************************
+--  Additional Comments: lab number 8 Group 6
 --
 --*/
 
@@ -21,15 +25,22 @@
 `timescale 1 ns/1 ns
 
 module DFlop (
-	input  arst  , // async reset
-	input  clk   , // clock posedge
-	input  din   , // data  in
-	input  load  , // data  load 
-	output dout    // data  out
+	input  arst 	   , // async reset
+	input  clk   		, // clock posedge
+	input  din   		, // data  in
+	input  load       , // load  enable
+	input  load_data  , // data load 
+	output dout    	  // data  out
 );
 
 	/* write your code here */
 	
+	 wire q_1, qb_1, qb_2;
+	 
+	 Dlatch	D0(arst, ~clk, din & ~load | load_data & load, q_1, qb_1),
+				D1(arst, clk, q_1, dout, qb_2);
+	
 	/* write your code here */
+	
 
 endmodule
