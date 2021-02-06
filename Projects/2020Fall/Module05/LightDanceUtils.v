@@ -6,15 +6,11 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 9831068
---  Student Name: Farshid Nooshi
---  Student Mail: farshidnooshi726@aut.at.ir
---  *******************************************************
 --  Student ID  : 9831066
 --  Student Name: Mohammad Mahdi Nemati Haravani
 --  Student Mail: adel110@aut.at.ir
 --  *******************************************************
---  Additional Comments: lab number 8 Group 6
+--  Additional Comments:
 --
 --*/
 
@@ -33,8 +29,21 @@ module Dlatch(
 		input   din ,
 		output  q,
 		output  qb
-    );
-	 
+    );/*
+	 reg qout, qbout;
+	 always@(rst or clk or din) begin 
+		if (rst == 1'b1) begin
+			qout = 1'b0;
+			qbout = ~q;
+		end 
+		else if (clk == 1'b1) begin
+			qout = din;
+			qbout = ~din;
+		end 
+	 end
+	 assign q = qout;
+	 assign qb = qbout;
+	 */
 	 wire q, qb, sb, rb;
 	 assign sb = ~din | ~clk;
 	 assign rb = din | ~clk;

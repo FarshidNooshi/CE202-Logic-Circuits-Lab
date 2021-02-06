@@ -6,15 +6,11 @@
 --  *******************************************************
 --  All Rights reserved (C) 2019-2020
 --  *******************************************************
---  Student ID  : 9831068
---  Student Name: Farshid Nooshi
---  Student Mail: farshidnooshi726@aut.at.ir
---  *******************************************************
 --  Student ID  : 9831066
 --  Student Name: Mohammad Mahdi Nemati Haravani
 --  Student Mail: adel110@aut.at.ir
 --  *******************************************************
---  Additional Comments: lab number 8 Group 6
+--  Additional Comments:
 --
 --*/
 
@@ -34,8 +30,20 @@ module DFlop (
 );
 
 	/* write your code here */
+/* 
+   reg ddout;
+	assign dout = ddout;
 	
+	always @ (posedge clk or posedge arst) 
+		if (arst) 
+			ddout = 1'b0;
+		else if (load)
+				ddout = load_data;
+		else 
+				ddout = din;
+*/
 	 wire q_1, qb_1, qb_2;
+	 
 	 
 	 Dlatch	D0(arst, ~clk, din & ~load | load_data & load, q_1, qb_1),
 				D1(arst, clk, q_1, dout, qb_2);

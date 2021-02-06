@@ -55,7 +55,18 @@ module DFlop (
 	/* write your code here */
 	
 	 wire q_1, qb_1, qb_2;
-	 
+/* 
+   reg ddout;
+	assign dout = ddout;
+	
+	always @ (posedge clk or posedge arst) 
+		if (arst) 
+			ddout = 1'b0;
+		else if (load)
+				ddout = load_data;
+		else 
+				ddout = din;
+*/
 	 Dlatch	D0(arst, aset, ~clk, din, q_1, qb_1),
 				D1(arst, aset, clk, q_1, dout, qb_2);
 	

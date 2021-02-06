@@ -51,6 +51,19 @@ module Dflop(
 		output  q
     );
 	 
+	 /* 
+   reg ddout;
+	assign dout = ddout;
+	
+	always @ (posedge clk or posedge arst) 
+		if (arst) 
+			ddout = 1'b0;
+		else if (load)
+				ddout = load_data;
+		else 
+				ddout = din;
+*/
+	 
 	 wire q_1, qb_1, qb;
 	 
 	 Dlatch	D0(rst, ~clk, din & wren | q & ~wren, q_1, qb_1),
