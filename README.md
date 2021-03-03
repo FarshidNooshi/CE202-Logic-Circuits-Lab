@@ -10,7 +10,7 @@
 
 > Course Supervisors (Instructors): prof. M. Saheb Zamani and prof. M. Sedighi
 
-Amirkabir University of Technology Logic Circuits Laboratory Material and Template Sources
+Amirkabir University of Technology Logic Circuits Laboratory Material and Template Sources and implementations
 
 ## Assignments Quick Link
 
