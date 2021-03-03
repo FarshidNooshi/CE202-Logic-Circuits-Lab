@@ -1,12 +1,16 @@
-# CE202-LC-Lab-Material
+# CE202-Logic Circuits-Lab-Material
+
+## overview
+  Hello.
+  The repository contains my group, homework, and assignments for the fall2020 logic circuits lab.
 
 ## Logic Circuits Laboratory Manual and Code Templates
 
 > BSc, Amirkabir University of Technology (Tehran Polytechnic)
 
-> Course Supervisors (Instructors): Dr. M. Saheb Zamani and Dr. M. Sedighi
+> Course Supervisors (Instructors): prof. M. Saheb Zamani and prof. M. Sedighi
 
-AUT Logic Circuits Laboratory Material and Template Sources
+Amirkabir University of Technology Logic Circuits Laboratory Material and Template Sources and implementations
 
 ## Assignments Quick Link
 
@@ -19,7 +23,7 @@ AUT Logic Circuits Laboratory Material and Template Sources
 * [**:pencil2: Lab-10**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/assignment-10)
 * [**:pencil2: Final Project**](https://github.com/FarshidNooshi/CE202-LC-Lab/tree/main/Projects/2020Fall)
 
-## Videos Link
+## Videos Link of the lab instructor 
 
 [**Labs Description (Youtube)**](https://www.youtube.com/playlist?list=PLp-e3qhBVp4NdtIgALVikB80Xuf1YZUTF)
 
