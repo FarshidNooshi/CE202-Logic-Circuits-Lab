@@ -2,7 +2,7 @@
 
 ## overview
   Hello.
-  The repository contains my group, homework, and assignments for the fall2020 logic circuits lab.
+  The repository contains my groups, homework, and assignments for the fall2020 logic circuits lab.
 
 ## Logic Circuits Laboratory Manual and Code Templates
 
